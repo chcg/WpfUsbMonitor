@@ -14,7 +14,8 @@ configuration:
     - Release
     - Debug
 
-
+install:
+    - git submodule -q update --init
 
 build_script:
     - cd "%APPVEYOR_BUILD_FOLDER%"
